@@ -1,6 +1,4 @@
 "use strict";
-
-console.log("bonjour");
 const $startBtn = document.getElementById("start-btn");
 const $guessBtn = document.getElementById("guess-btn");
 const $cowBtn = document.getElementById("cow-btn");
@@ -13,7 +11,6 @@ let nbGuesses = 0;
 let maxGuesses = 0;
 
 function launchGame(_evt) {
-  console.log("Fonction launchGame...")
   $guessBtn.removeAttribute("disabled");
   secretNumber = Math.floor(Math.random() * $maxUsr.value) + 1;
   maxGuesses = Math.ceil(Math.log($maxUsr.value)) + 1;
